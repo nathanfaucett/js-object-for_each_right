@@ -1,4 +1,20 @@
 object-for_each_right
 =======
 
-object for_each_right for the browser and node.js
+executes a provided function once per object element.
+
+
+```javascript
+var objectForEachRight = require("@nathanfaucett/object-for_each_right");
+
+
+objectForEachRight({
+        a: "a",
+        b: "b",
+        c: "c"
+    },
+    function(value, key, object) {
+        console.log(value, key, object);
+    }
+);
+```
